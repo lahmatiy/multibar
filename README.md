@@ -40,15 +40,32 @@ for (var i = 0; i < 3; i++) {
 }
 ```
 
+Example in action:
+
+![multibar-demo](https://user-images.githubusercontent.com/270491/31435147-592a6e76-ae87-11e7-9fde-61512f5a1dac.gif)
+
 ## API
 
 ```
 multibar(prelude, message, options);
 ```
 
-All agruments are optional.
+All agruments are optional. Returns a bar instance with method:
 
-### Options
+- `update(progress, message)`
+
+    Update bar progress and message. Parameters:
+
+    * `progress` should be a number in range [0..1]
+    * `message` – any string to output on right side of bar
+
+- `done(message)`
+
+    Finalize bar progress (hide progress bar, prelude and message are left).
+
+    * `message` any string
+
+Options:
 
 - `complete`
 
