@@ -1,0 +1,50 @@
+{
+  "name": "multibar",
+  "version": "1.0.0",
+  "description": "Simple and robust terminal's progress bar with multiple instance support",
+  "author": "Roman Dvornov <rdvornov@gmail.com>",
+  "license": "MIT",
+  "repository": "lahmatiy/multibar",
+  "keywords": [
+    "terminal",
+    "progress",
+    "progresbar",
+    "bar"
+  ],
+  "files": [
+    "index.js",
+    "HISTORY.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "lint": "jscs index.js && eslint index.js",
+    "travis": "npm run lint"
+  },
+  "dependencies": {
+    "chalk": "^2.0.0",
+    "fixed-width-string": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "jscs": "~3.0.7"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "rules": {
+      "no-duplicate-case": 2,
+      "no-undef": 2,
+      "no-unused-vars": [
+        2,
+        {
+          "vars": "all",
+          "args": "after-used"
+        }
+      ]
+    }
+  }
+}
