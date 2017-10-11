@@ -3,11 +3,13 @@
 [![NPM version](https://img.shields.io/npm/v/multibar.svg)](https://www.npmjs.com/package/multibar)
 [![Build Status](https://travis-ci.org/lahmatiy/multibar.svg?branch=master)](https://travis-ci.org/lahmatiy/multibar)
 
+Simple and robust terminal's progress bar with multiple instance support.
+
 Features:
 
 - Simple and robust
 - Multiple progress bar at once
-- Supports ANSI coloring in labels (e.g. colored with `chalk`)
+- Supports ANSI styled strings in labels (e.g. styled with `chalk`)
 
 ## Install
 
@@ -80,6 +82,11 @@ Options:
   Default: depends on platform and `chalk` enabled
 
   Character for fill rest of progress.
+
+## Useful packages
+
+- [chalk](https://github.com/chalk/chalk) – Terminal string styling done right
+- [fixed-width-string](https://github.com/lahmatiy/fixed-width-string) – Terminal ANSI-aware string fit to fixed width
 
 ## License
 
